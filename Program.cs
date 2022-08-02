@@ -17,3 +17,23 @@ void PrintArray (string [] currentArray)
     }
     Console.WriteLine($"]");
 }
+void MainTask (string [] currentArray)
+{
+    int count = 0;
+    for (int i = 0; i < currentArray.Length; i++)
+    {
+        if (currentArray[i].Length <= 3) count++;
+    }
+    string [] newArray = new String [count];
+    int j = -1;
+    for (int i = 0; i < currentArray.Length; i++)
+    {
+        if (currentArray[i].Length <= 3)
+        {
+            j++;
+            newArray[j] = currentArray[i];
+        }
+    }
+    Console.Write ("Массив из элементов, больше 3 символов: ");
+    PrintArray(newArray);
+}
