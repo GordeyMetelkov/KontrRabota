@@ -34,6 +34,11 @@ void MainTask (string [] currentArray)
             newArray[j] = currentArray[i];
         }
     }
-    Console.Write ("Массив из элементов, больше 3 символов: ");
+    Console.Write ("Массив из элементов, состоящий из 3 и менее символов: ");
     PrintArray(newArray);
 }
+FillArray (massiv);
+Console.WriteLine ();
+Console.Write ("Задан следующий массив: ");
+PrintArray (massiv);
+MainTask (massiv);
