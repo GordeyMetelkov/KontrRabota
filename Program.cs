@@ -8,3 +8,12 @@ void FillArray (string [] currentArray)
         currentArray[index] = Console.ReadLine();
     }
 }
+void PrintArray (string [] currentArray)
+{
+    Console.Write($"[  ");
+    for (int index = 0; index < currentArray.Length; index++)
+    {
+        Console.Write($"'{currentArray[index]}'  ");
+    }
+    Console.WriteLine($"]");
+}
